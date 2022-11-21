@@ -6,7 +6,7 @@ export const parseRequestUrl = () => {
 
     return {
         resource: request[1],
-        id: request[3],
+        id: request[2],
         action: request[3]
     }
 }
