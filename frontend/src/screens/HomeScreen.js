@@ -15,7 +15,7 @@ const HomeScreen = {
                          </a>
                         <div class="product-name">
                             <a href="/#/product/1">
-                                ${produtc.name}
+                                ${product.name}
                             </a>
                         </div>
                         <div class="product-brand">
@@ -26,9 +26,11 @@ const HomeScreen = {
                         </div>
                     </div>
                 </li>
-            `)}
+            `).join('\n')}
         </ul>
 
         `
     }
 }
+
+export default HomeScreen
