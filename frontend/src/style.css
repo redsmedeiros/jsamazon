@@ -12,6 +12,15 @@ body{
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+    color: #203040;
+}
+
+a:hover{
+    color: #f08040;
+}
+
 .grid-container{
     display: grid;
     grid-template-areas: /*definimos tres linhas do grid*/
