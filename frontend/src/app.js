@@ -9,7 +9,7 @@ const routes = {
     "/product/:id": ProductScreen
 }
 
-const router = () => {
+const router = async () => {
 
     const request = parseRequestUrl()
    
@@ -19,7 +19,7 @@ const router = () => {
    
     const main = document.getElementById('main-container')
 
-    main.innerHTML = screen.render()
+    main.innerHTML = await screen.render()
 }
 
 window.addEventListener('load', router)

@@ -1,9 +1,22 @@
 import data from '../data.js'
 
 const HomeScreen = {
-    render: ()=> {
+    render: async ()=> {
 
-        const { products } = data
+        //const { products } = data
+
+        const response = await fetch('http://localhost:5000/api/products', {
+            headers:{
+                'Content-Type': 'application/json'
+            }
+        })
+
+        //se as duas respostas forem falsas
+        if(!response || !response.ok){
+            return `<div>Error in getting Data</div>`
+        }
+
+        const products = await response.json()
 
         return `
         <ul class="products">
