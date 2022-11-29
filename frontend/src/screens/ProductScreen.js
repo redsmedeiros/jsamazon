@@ -1,9 +1,8 @@
 const ProductScreen = {
 
     render: ()=>{
-
-        return `<div>Product Screen</div>`
-    }
+        return `<div>ProductScreen</div>`
+    } 
 }
 
 export default ProductScreen
