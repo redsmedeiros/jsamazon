@@ -108,3 +108,12 @@ a{
 a:hover{
     color: gold;
 }
+
+.rating{
+    color: gold;
+    font-size: 1.4rem;
+}
+
+.rating span:last-child{
+    color: #363636;
+}
